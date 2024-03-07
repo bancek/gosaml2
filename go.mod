@@ -9,3 +9,5 @@ require (
 	github.com/russellhaering/goxmldsig v1.4.0
 	github.com/stretchr/testify v1.8.4
 )
+
+replace github.com/russellhaering/goxmldsig => github.com/bancek/goxmldsig v0.0.0-20240307045901-1b8990470426
