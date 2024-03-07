@@ -39,6 +39,7 @@ const (
 func (sp *SAMLServiceProvider) validationContext() *dsig.ValidationContext {
 	ctx := dsig.NewDefaultValidationContext(sp.IDPCertificateStore)
 	ctx.Clock = sp.Clock
+	ctx.SkipCertificateValidation = sp.SkipCertificateValidation
 	return ctx
 }
 
