@@ -91,6 +91,10 @@ type SAMLServiceProvider struct {
 	// this size during decompression an error will be returned.
 	MaximumDecompressedBodySize int64
 
+	SkipIssuerValidation              bool
+	SkipSubjectConfirmationValidation bool
+	SkipConditionsValidation          bool
+
 	signingContextMu sync.RWMutex
 	signingContext   *dsig.SigningContext
 }
